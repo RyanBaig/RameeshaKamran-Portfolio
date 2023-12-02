@@ -1,6 +1,4 @@
-
-
-
+// import { Email } from "smtpjs";
 
 // element toggle function
 const elementToggleFunc = function (elem) {
@@ -120,8 +118,17 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
-
-// ------------ WILL ADD EMAIL FUNC ------------
+// function sendEmail() {
+//   Email.send({
+//     Host: "smtp.gmail.com",
+//     Username: "rg5373429@gmail.com",
+//     Password: "googleacc@123pass",
+//     To: "rg5334292@gmail.com",
+//     From: "rg5373429@gmail.com",
+//     Subject: "This is the subject",
+//     Body: "And this is the body",
+//   }).then((message) => alert(message));
+// }
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
@@ -142,5 +149,3 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
-
-

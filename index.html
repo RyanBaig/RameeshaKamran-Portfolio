@@ -4,6 +4,28 @@
 <head>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4224351885218987"
     crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    const publicKey = "nWXRMTA5XypDV0MYY";
+    (function () {
+      emailjs.init(publicKey);
+    })();
+    function sendEmail(from) {
+      const templateParams = {
+        to_email: "kamran.rameesha6@gmail.com",
+        from_name: from,
+        message: document.getElementById('contact-input').value,
+      }
+      emailjs.send("default_service", "default", templateParams, publicKey)
+          .then(function (response) {
+          console.log('SUCCESS!', response.status, response.text);
+        }, function (error) {
+          console.log('FAILED...', error);
+        });
+
+    }
+  </script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -90,7 +112,7 @@
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
 
-              <time datetime="1982-06-23">2nd February, 2001</time>
+              <time datetime="2001-02-06">6th February</time>
             </div>
 
           </li>
@@ -199,31 +221,22 @@
 
         <section class="about-text">
           <p>
-            Hello, I'm Rameesha Kamran, a passionate fashion designer based in Lahore, Pakistan. I hold a Bachelor's
-            degree in
-            Fashion from the University of South Asia Lahore Raiwind Campus, Lahore. I'm passionate about shaping my
-            creative journey and laying the
-            foundation for my distinctive approach to design.
+            Hello, I'm Rameesha Kamran, a Lahore-based fashion designer with a Bachelor's degree in Fashion from the University of
+            South Asia Lahore Raiwind Campus. This educational journey has been instrumental in shaping my creative vision and
+            setting the stage for my unique design approach.
           </p>
 
-          <p>My design philosophy is deeply rooted in the vibrant cultural tapestry of Lahore. I strive to seamlessly
-            weave
-            traditional Pakistani aesthetics with contemporary styles, creating a harmonious fusion that resonates with
-            fashion
-            enthusiasts. From intricately embroidered bridal couture to chic and modern pret wear, each piece in my
-            collection tells
-            a unique story.</p>
-          <p>My commitment to quality craftsmanship and a relentless pursuit of innovation positions me at the forefront
-            of
-            Pakistan's dynamic fashion scene. Education has been a crucial part of my creative evolution, allowing me to
-            push the
-            boundaries of conventional design. I'm excited to continue shaping the landscape of Pakistani fashion with
-            my unique
-            perspective and unwavering passion for the art.</p>
+          <p>My design philosophy is a reflection of Lahore's rich cultural tapestry. I strive to blend traditional Pakistani
+          aesthetics seamlessly with contemporary styles, creating a harmonious fusion that resonates with fashion enthusiasts.
+          From intricately embroidered bridal couture to chic and modern pret wear, each piece in my collection narrates a
+          distinct story.</p>
+          <p>Passionate about blending eastern and western influences in fashion, I, Rameesha from Lahore, bring a distinctive touch to
+          my designs. Committed to quality craftsmanship, I strive to innovate and shape Pakistan's dynamic fashion scene through
+          my unique perspective and education.</p>
         </section>
 
 
-        <!--
+        <!---
           - service
         -->
 
@@ -237,7 +250,7 @@
 
               <div class="service-icon-box">
                 <img src="./assets/images/icon-freelancer.svg
-                    " alt="design icon" width="50">
+                    " alt="freelancer icon" width="50">
               </div>
 
               <div class="service-content-box">
@@ -254,16 +267,16 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development
-                    icon" width="40">
+                <img src="./assets/images/icon-shirt.svg" alt="fashion design icon
+                    icon" width="45">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web Development</h4>
+                <h4 class="h4 service-item-title">Fashion Design</h4>
 
                 <p class="service-item-text">
-                  Crafting high-quality web applications and services at the
-                  professional level.
+                  Reflects a unique synthesis of eastern and western influences, a testament to my innovative and versatile design
+                  expertise.
                 </p>
               </div>
 
@@ -272,15 +285,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src="./assets/images/icon-pencil.svg" alt="mobile app icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <h4 class="h4 service-item-title">Conceptualizer</h4>
 
                 <p class="service-item-text">
-                  Learning to make Professional development of applications
-                  for iOS and Android.
+                  Translating my visionary ideas through conceptualization.
                 </p>
               </div>
 
@@ -535,7 +547,7 @@
 
               <h4 class="h4 timeline-item-title">The University of South Asia (Raiwind Road Campus)</h4>
 
-              <span>2019</span>
+              <span>2019 - 2023</span>
 
               <p class="timeline-text">
                 I have graduated with the Bachelor Fashion Design Degree from USA (University of South Asia).
@@ -599,11 +611,11 @@
 
               <div class="title-wrapper">
                 <h5 class="h5">Tech Packs</h5>
-                <data value="85">85%</data>
+                <data value="90">90%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
+                <div class="skill-progress-fill" style="width: 90%;"></div>
               </div>
 
             </li>
@@ -705,11 +717,11 @@
 
               <div class="title-wrapper">
                 <h5 class="h5">Apparel</h5>
-                <data value="90">90%</data>
+                <data value="95">95%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
+                <div class="skill-progress-fill" style="width: 95%;"></div>
               </div>
 
             </li><li class="skills-item">
@@ -1308,15 +1320,14 @@
           <form action="#" class="form" data-form>
 
             <div class="input-wrapper">
-              <input type="text" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" class="form-input" id="contact-name" placeholder="Full name" required data-form-input>
 
               <input type="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
-            <textarea class="form-input" placeholder="Your
-                Message" required data-form-input></textarea>
+            <textarea class="form-input" id="contact-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn onclick="submit()">
+            <button class="form-btn" type="submit" disabled data-form-btn onclick="sendEmail(document.getElementById('contact-name').value)">
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
