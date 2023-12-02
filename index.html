@@ -17,7 +17,7 @@
         from_name: from,
         message: document.getElementById('contact-input').value,
       }
-      emailjs.send("default_service", "default", templateParams, publicKey)
+      emailjs.send("default_service", "rk-template", templateParams, publicKey)
           .then(function (response) {
           console.log('SUCCESS!', response.status, response.text);
         }, function (error) {
