@@ -1,12 +1,4 @@
 {
-  "cleanUrls": true,
-  "functions": {
-    "api/badgegenerator/categorysearch.js": {
-      "maxDuration": 5
-    },
-    "api/badgegenerator/badgesearch.js": {
-      "maxDuration": 5
-    }
-  }
+  "cleanUrls": true
 }
 
